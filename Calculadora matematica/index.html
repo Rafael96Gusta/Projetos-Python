@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora Matemática by Rafael Gustvo Nogueira - 12511RIT027</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/UFU_LOGO.png" alt="UFU" class="logo">
+    <h1>Calculadora Matemática UFU</h1>
+  </header>
+
+  <div class="calculator">
+    <input type="text" id="display" class="display" placeholder="0" readonly>
+
+    <div class="buttons">
+      <!-- Linha 1 -->
+      <button class="function" onclick="clearDisplay()">C</button>
+      <button class="function" onclick="deleteLast()">⌫</button>
+      <button class="function" onclick="append('(')">(</button>
+      <button class="function" onclick="append(')')">)</button>
+
+      <!-- Linha 2 -->
+      <button onclick="append('7')">7</button>
+      <button onclick="append('8')">8</button>
+      <button onclick="append('9')">9</button>
+      <button class="operator" onclick="append('/')">÷</button>
+
+      <!-- Linha 3 -->
+      <button onclick="append('4')">4</button>
+      <button onclick="append('5')">5</button>
+      <button onclick="append('6')">6</button>
+      <button class="operator" onclick="append('*')">×</button>
+
+      <!-- Linha 4 -->
+      <button onclick="append('1')">1</button>
+      <button onclick="append('2')">2</button>
+      <button onclick="append('3')">3</button>
+      <button class="operator" onclick="append('-')">−</button>
+
+      <!-- Linha 5 -->
+      <button onclick="append('0')">0</button>
+      <button onclick="append('.')">.</button>
+      <button class="equal" onclick="calculate()">=</button>
+      <button class="operator" onclick="append('+')">+</button>
+
+      <!-- Linha 6 - Funções matemáticas -->
+      <button onclick="append('^')">xⁿ</button>
+      <button onclick="append('sqrt(')">√</button>
+      <button onclick="append('sin(')">sin</button>
+      <button onclick="append('cos(')">cos</button>
+
+      <!-- Linha 7 -->
+      <button onclick="append('tan(')">tan</button>
+      <button onclick="append('log(')">log</button>
+      <button onclick="append('ln(')">ln</button>
+      <button onclick="append('pi')">π</button>
+
+      <!-- Linha 8 -->
+      <button onclick="append('e')">e</button>
+      <button onclick="factorial()">n!</button>
+      <button onclick="gcd()">MDC</button>
+      <button onclick="lcm()">MMC</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Desenvolvido por <strong>Rafael Gustavo Nogueira - 12511RIT027</strong> — inspirado na identidade visual da <strong>UFU</strong> © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
